@@ -10,7 +10,7 @@
     
     
     
-    <title>Hello World | VOICEROID</title>
+    <title>about | VOICEROID</title>
     <link href="”http://vro-relatedproducers.top“" rel="”prefetch”">
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -72,7 +72,7 @@
             <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
             
         </div>
-        <audio id="audio" src="/imgs/oni.mp3"></audio>
+        <audio id="audio" src="/imgs/oni.wav"></audio>
     </div>
 </div>
     
@@ -107,7 +107,7 @@
                 
                 <li class="">
                     <a href="/">
-                        <i class="fa fa-home"></i>原创作者
+                        <i class="fa fa-home"></i>首页
                     </a>
                 </li>
                 
@@ -122,10 +122,22 @@
                 
                 
                 
-                <li class="">
-                    <a href="/categories">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>分类
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/原创作者/">原创作者</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -141,7 +153,7 @@
                 
                 
                 
-                <li class="">
+                <li class="current">
                     <a href="/about">
                         <i class="fa fa-user"></i>VOICEROID相关
                     </a>
@@ -156,27 +168,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    
+                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
+
+
 <article class="article well article-body" id="article">
-    <div class="breadcrumb">
-        <i class="fa fa-home"></i>
-        <a href="http://vro-relatedproducers.top">VOICEROID</a>
-        >
-        <span>Hello World</span>
-    </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2019/07/28/cjyneslye0001vouw2npnqip8/">Hello World</a>
+                <a href="/about/index.html">about</a>
             </h1>
         </div>
         <div class="tag-article">
-            
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2019-07-28
+                <i class="fa fa-calendar"></i> 2019-07-29
             </span>
-            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -184,35 +190,19 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2019/07/28/cjyneslye0001vouw2npnqip8/">Hello World</a>
+                    <a href="/about/index.html">about</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2019-07-28
-            </p>
-            <p>
-                
-                
+                <i class="fa fa-calendar"></i> 2019-07-29
             </p>
         </center>
     </div>
     <div class="content-article">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        
     </div>
 </article>
+
 
 
                 </div>
@@ -271,7 +261,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/07/28/cjyneslye0001vouw2npnqip8/">Hello World</a>
+                    <a href="/2019/07/28/cjyosyvfv0000p8uwzejs26wl/">Hello World</a>
                 </span>
             </li>
             
@@ -293,7 +283,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/07/28/cjyneslye0001vouw2npnqip8/">Hello World</a>
+                    <a href="/2019/07/28/cjyosyvfv0000p8uwzejs26wl/">Hello World</a>
                 </span>
             </li>
             
@@ -308,17 +298,17 @@
 
                 
                 <li>
-                    <a href="/2019/07/28/cjyneslye0001vouw2npnqip8/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/about/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/07/28/cjyneslye0001vouw2npnqip8/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/about/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2019/07/28/cjyneslye0001vouw2npnqip8/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/about/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
