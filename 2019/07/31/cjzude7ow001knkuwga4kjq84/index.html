@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/kanbarasuruga/live2d-widget@new1.03/autoload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+    <link rel="icon" type="image/x-icon" href> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="suruga">
+    
+    
+    
+    
+    
+    
+    <title>VOICEROID月刊第二期——2018.10 | VOICEROID相关制作介绍</title>
+    <link href="”https://vro-relatedproducers.top“" rel="”prefetch”">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/highslide/highslide-full.min.js"></script>
+    <link rel="stylesheet" href="/js/highslide/highslide.css">
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.png');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg,preview5.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+</head></html>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://vro-relatedproducers.top" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.wav"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://vro-relatedproducers.top">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">VOICEROID相关制作介绍</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/往期作品介绍/">往期作品介绍</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/相关制作教程/">相关制作教程</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/VOICEROID月刊/">VOICEROID月刊</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/汉化搬运作者/">汉化搬运作者</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/中文原创作者/">中文原创作者</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/音乐类原创作者/">音乐类原创作者</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/原创作者/">原创作者</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/日文原创作者/">日文原创作者</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/日文配音作者/">日文配音作者</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/VRO月刊作者/">VRO月刊作者</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/vro-related">
+                        <i class="fa fa-user"></i>VOICEROID相关
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://vro-relatedproducers.top">VOICEROID相关制作介绍</a>
+        >
+        <span>VOICEROID月刊第二期——2018.10</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2019/07/31/cjzude7ow001knkuwga4kjq84/">VOICEROID月刊第二期——2018.10</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2019-07-31
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2019/07/31/cjzude7ow001knkuwga4kjq84/">VOICEROID月刊第二期——2018.10</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2019-07-31
+            </p>
+            <p>
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <p>VOICEROID月刊第二期————<a href="https://www.bilibili.com/video/av35664822" target="_blank" rel="noopener">哔哩哔哩Voiceroid月刊 #001 @2018/10</a></p>
+<hr>
+<p>原创作品（月刊收录+未收录）</p>
+<p>月刊收录作品（关于分数跟视频预览请看月刊视频）</p>
+<p>NO.？————13_B_Neko 【指绘】画一个绁星灯吧（画渣终于……当然不可能的）<br>注：这个视频已经不见了</p>
+<p>NO.？————Apuruth <a href="https://www.bilibili.com/video/av35001363?from=search&seid=11649297152933992301" target="_blank" rel="noopener">【voiceroid影之诗】葵的快乐扭蛋鬼决斗</a></p>
+<p>NO.？————Ha～～～～～ <a href="https://www.bilibili.com/video/av34847857?from=search&seid=2817617457628697075" target="_blank" rel="noopener">Touhou Luna Nights 36秒正常强化无伤速通帕秋莉</a></p>
+<p>NO.？————jiameng337    <a href="https://www.bilibili.com/video/av34845633?from=search&seid=18309818549712960533" target="_blank" rel="noopener">高达战斗行动２一台让08小队颤栗的MS</a><br>注：这个视频并没有VRO要素，至于为什么被收录，大概是祈瑶玖的爱好吧2333</p>
+<p>NO.？————morion_saru <a href="https://www.bilibili.com/video/av33368509?from=search&seid=16071188977475103028" target="_blank" rel="noopener">【自制实况】琴叶茜葵姐妹的一日神体验 第一期</a></p>
+<p>NO.？————morion_saru <a href="https://www.bilibili.com/video/av34350084?from=search&seid=10804722938467431078" target="_blank" rel="noopener">【自制实况】琴叶姐妹的一战体验历史第一期</a></p>
+<p>NO.？————氷雨ハルカ <a href="https://www.bilibili.com/video/av33348925?from=search&seid=16370018925336591920" target="_blank" rel="noopener">【琴葉葵】白い雪のプリンセスは【VOICEROID Cover】</a></p>
+<p>NO.？————高坂八零桑 <a href="https://www.bilibili.com/video/av34480155?from=search&seid=11584577124416270118" target="_blank" rel="noopener">【自制】结月缘的菲雅利帝国宇宙之旅EP.0【VOICEROID实况】</a></p>
+<p>NO.？————鸽子雷 <a href="https://www.bilibili.com/video/av34766045?from=search&seid=5196810937572791474" target="_blank" rel="noopener">【RC】结月缘保护了队友 02</a></p>
+<p>NO.？————寒月菌 <a href="https://www.bilibili.com/video/av34824551?from=search&seid=1040113513565775896" target="_blank" rel="noopener">东北切蒲英与朋友的快乐的三国杀 EP.1</a></p>
+<p>NO.？————君临德雷克 <a href="https://www.bilibili.com/video/av34542610?from=search&seid=10553949818246276809" target="_blank" rel="noopener">【VOICEROID实况】【琴葉茜·葵·切蒲英】Harder, Better, Faster, Stronger【危险节奏】#1</a></p>
+<p>NO.？————口若悬河滔滔不绝 <a href="https://www.bilibili.com/video/av34315625?from=search&seid=12129409860242167572" target="_blank" rel="noopener">【Voiceroid·Minecraft】跟着小茜去冒险 第一集 On That Island</a></p>
+<p>NO.？————萌萌哒的竹风菌 <a href="https://www.bilibili.com/video/av32964976?from=search&seid=4936204699362752845" target="_blank" rel="noopener">【琴叶姐妹的游戏人生】躺在猫车上追寻古龙的少女 Part 1</a></p>
+<p>NO.？————祈瑶玖 <a href="https://www.bilibili.com/video/av34893957?from=search&seid=15051500744808424433" target="_blank" rel="noopener">【歌うVoiceroid 琴叶茜·葵】stronger than you ver.Frisk+Chara【719】</a></p>
+<p>NO.？————维他柠檬橙 <a href="https://www.bilibili.com/video/av33583442?from=search&seid=11658540461137070989" target="_blank" rel="noopener">【血源诅咒】结月缘小姐是猎人（Voiceroid实况）</a></p>
+<p>NO.？————雨衣_結衣ニャン <a href="https://www.bilibili.com/video/av33097153?from=search&seid=9681726897947340362" target="_blank" rel="noopener">【OP】1st stage/凛酱到来之时 -Another Memory- 【修正版】【双语字幕】【VOICEROID综合】</a></p>
+<p>NO.？————月夜喵 <a href="https://www.bilibili.com/video/av33135647?from=search&seid=10420966464402724031" target="_blank" rel="noopener">【自制】【同人MV】个人汉化宣传视频（伪）【VOICEROID剧场（伪）】</a></p>
+<p>NO.？————月夜喵 <a href="https://www.bilibili.com/video/av32800088?from=search&seid=14036754338877672119" target="_blank" rel="noopener">【自制】月夜喵的闲聊 01【VOICEROID剧场】</a></p>
+<p>NO.？————泽尔里奇 <a href="https://www.bilibili.com/video/av33902350?from=search&seid=3126442534461423542" target="_blank" rel="noopener">【高达战斗行动2】缘·结月陆士，凋零于战场！【吉姆强袭型视点】【VOICEROID实况】</a></p>
+<p>月刊未收录作品</p>
+<p>口若悬河滔滔不绝</p>
+<p><a href="https://www.bilibili.com/video/av33780134?from=search&seid=15388464714895081263" target="_blank" rel="noopener">【VOICEROID·Minecraft】跟着小茜去冒险 第一集 Beta</a></p>
+<p>雨衣_結衣ニャン</p>
+<p><a href="https://www.bilibili.com/video/av33304967?from=search&seid=4531272115001426525" target="_blank" rel="noopener">【VOICEROID游剧场】凛酱到来之时2.0附赠+2.0系列临时新OP【双语字幕】</a></p>
+<p>泽尔里奇</p>
+<p><a href="https://www.bilibili.com/video/av33052597?from=search&seid=4610672244336009292" target="_blank" rel="noopener">【高达战斗行动2】想要活下去的结月缘小姐【高达EZ8视点】【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34147810?from=search&seid=5525792085139737166" target="_blank" rel="noopener">【高达战斗行动2】指引我吧，玛丽昂</a></p>
+<p><a href="https://www.bilibili.com/video/av34485689?from=search&seid=15120115270705618874" target="_blank" rel="noopener">【GBO2】机动战士高达MSV-R 弦卷真纪的归还【VOICEROID实况】</a></p>
+<hr>
+<p>搬运作品（月刊收录+汉化未收录）</p>
+<p>月刊收录作品（关于分数跟视频预览请看月刊视频）</p>
+<p>NO.？————302号房的结月缘 <a href="https://www.bilibili.com/video/av33377145?from=search&seid=8233158819093596357" target="_blank" rel="noopener">【Moonlighter】Voiceroid结月缘实况解说</a></p>
+<p>NO.？————AkariUnion 【Dreaming Sarah】ゆかりさんの夢放浪【VOICEROID実況】<br>注：这个视频不见了</p>
+<p>NO.？————CairZ <a href="https://www.bilibili.com/video/av33394354?from=search&seid=17051615410167683973" target="_blank" rel="noopener">【紲星あかり】オレンジひとつ【kashiya】</a></p>
+<p>NO.？————deddeddededede 【Bird Game】ことりことのは一羽目【琴葉姉妹実況】<br>注：这个视频被猫吃了</p>
+<p>NO.？————deddeddededede 【Just Shapes&amp;Beats】踊る葵の口【VoiceRoid実況】<br>注：这个视频被隙间了</p>
+<p>NO.？————Kialafina <a href="https://www.bilibili.com/video/av34113207?from=search&seid=17263126281354174004" target="_blank" rel="noopener">【游戏王5D’s】琴叶葵VS东北俊子（真闪珖龙登场）【VOICEROID剧场】</a></p>
+<p>NO.？————OtnoshenijaSvet [OneShot]チャンスは一度きりだ、琴葉茜[琴葉姉妹実況]<br>注：这个视频消失了</p>
+<p>NO.？————OtnoshenijaSvet 【Wuppo】あかりとワムのお茶目な大冒険【VOICEROID実況】<br>注：这个视频被鱼吃了</p>
+<p>NO.？————暗黑之森 <a href="https://www.bilibili.com/video/av33716497?from=search&seid=1898849935768279813" target="_blank" rel="noopener">【影之诗搬运】【黒い栞】【完全胜利】让天使教来，给环境断罪！！【VOICEROID-油库里实况】</a></p>
+<p>NO.？————苍穹的希望 <a href="https://www.bilibili.com/video/av33418052?from=search&seid=6500196512303725834" target="_blank" rel="noopener">【熟肉教程】地球防卫军5 向结月缘学习！武直操作解说后篇 VOICEROID实况</a></p>
+<p>NO.？————触手様P <a href="https://www.bilibili.com/video/av32815389?from=search&seid=14390354299381077803" target="_blank" rel="noopener">【弹幕付】变成亚克力钥匙圈了的琴叶姐妹feat京町セイカ</a></p>
+<p>NO.？————绯红之印的复读机    ヤンデレの葵に死ぬほど愛されて眠れない茜<br>注：这个视频被神隐了</p>
+<p>NO.？————黑格原子 <a href="https://www.bilibili.com/video/av34959262?from=search&seid=4058664405850297880" target="_blank" rel="noopener">【生肉】【PUBG】AWM＋Mk14最強重課金装備lvあかりちゃん【VOICEROID実況】</a></p>
+<p>NO.？————哗啦哗哔哩哔 <a href="https://www.bilibili.com/video/av33564787?from=search&seid=2219436883241274307" target="_blank" rel="noopener">【東北きりたん cover】インドア系ならトラックメイカー【zuckey】</a></p>
+<p>NO.？————哗啦哗哔哩哔 <a href="https://www.bilibili.com/video/av33396241?from=search&seid=9554999415290026906" target="_blank" rel="noopener">【紲星あかり】致那些残渣消失后怀着丧失感共同前进的人们【RAG.cocteau】</a></p>
+<p>NO.？————井文卫 <a href="https://www.bilibili.com/video/av32793923?from=search&seid=5918741555729423238" target="_blank" rel="noopener">【授权汉化】琴葉葵的悠悠球解説 002 Yomega Hyper Warp Wing 可惜没有成为Hyper YOYO的悠悠球</a></p>
+<p>NO.？————君临德雷克 <a href="https://www.bilibili.com/video/av34281539?from=search&seid=4494489246989618000" target="_blank" rel="noopener">【熟肉】缘的休假#10【VOICEROID实况】【森林】</a></p>
+<p>NO.？————君临德雷克 <a href="https://www.bilibili.com/video/av34128417?from=search&seid=2478526485913812179" target="_blank" rel="noopener">【授权汉化】【琴叶姐妹】没有姐姐的生活超简单的【VOICEROID剧场】</a></p>
+<p>NO.？————可尔必思型秋霜月 <a href="https://www.bilibili.com/video/av33387091?from=search&seid=8073700396847460262" target="_blank" rel="noopener">【授权汉化/VOICEROID实况】东北切蒲英的三国志13侠客行 第八话</a></p>
+<p>NO.？————空想水晶诅咒绯红锁链 <a href="https://www.bilibili.com/video/av33516324?from=search&seid=6973474482150139951" target="_blank" rel="noopener">楽曲集 : 「憎しみと決意の声」告知動画</a></p>
+<p>NO.？————空想水晶诅咒绯红锁链 <a href="https://www.bilibili.com/video/av32984076?from=search&seid=9475074606845498360" target="_blank" rel="noopener">【琴葉姉妹オリジナル曲】コトノハムジカ【ミニコンピXFD】</a></p>
+<p>NO.？————卢瑟谢特旺 <a href="https://www.bilibili.com/video/av34913420?from=search&seid=9414230850824329454" target="_blank" rel="noopener">【上古卷轴5】绁星灯的超惊险天际历险 #1【VOICEROID实况】</a></p>
+<p>NO.？————普通的翅膀 <a href="https://www.bilibili.com/video/av33859312?from=search&seid=16938611410854651993" target="_blank" rel="noopener">【个人汉化】彼岸列车1 前篇【VOICEROID剧场】</a></p>
+<p>NO.？————普通的翅膀 <a href="https://www.bilibili.com/video/av33122054?from=search&seid=5850869176252393255" target="_blank" rel="noopener">【个人汉化】避雨侦探4 后篇【VOICEROID剧场】【完结】</a></p>
+<p>NO.？————祈瑶玖 <a href="https://www.bilibili.com/video/av34163143?from=search&seid=18217991528668622161" target="_blank" rel="noopener">【授权汉化】葵的笨拙恋爱喜剧 第1话前篇【VOICEROID剧场】</a></p>
+<p>NO.？————琴茜叶葵 不上学的切蒲英的春夏秋冬<br>注：这个视频不见了 原因是有其他人要了授权做了翻译视频</p>
+<p>NO.？————琴茜叶葵 <a href="https://www.bilibili.com/video/av33457005?from=search&seid=8844672829794149583" target="_blank" rel="noopener">VOICEROID们的Nyanyanyanyanyanyanya！</a></p>
+<p>NO.？————森罗桑 <a href="https://www.bilibili.com/video/av33722203?from=search&seid=5115023542397253125" target="_blank" rel="noopener">【熟肉内嵌】【They are billions】结月绁星姉妹の終末世界生存戦略 Restart：5【160%】</a></p>
+<p>NO.？————神的领域 <a href="https://www.bilibili.com/video/av34202541?from=search&seid=9480041285052025360" target="_blank" rel="noopener">【nico搬运】弦卷maki与结月yukari的未确认游戏日常#44</a></p>
+<p>NO.？————紲星連邦 【LobotomyCorporation】Abnormalitie観察日記～四種の葵添え～【VOICEROID実況】<br>注：这个视频被猫叼走了</p>
+<p>NO.？————星のカケラ <a href="https://www.bilibili.com/video/av33990755?from=search&seid=3278571575766635560" target="_blank" rel="noopener">【紲星あかり】Changes【千兎白】</a></p>
+<p>NO.？————雪蔬菜 <a href="https://www.bilibili.com/video/av32845384?from=search&seid=6664333352888342121" target="_blank" rel="noopener">【Minecraft】初学者琴叶葵游玩Minecraft空岛模式#1【VOICEROID实况】</a></p>
+<p>NO.？————雪蔬菜 <a href="https://www.bilibili.com/video/av33024194?from=search&seid=17402751866466771656" target="_blank" rel="noopener">【The Crew】献给新世界【VOICEROID剧场】</a></p>
+<p>NO.？————言刃文刀 <a href="https://www.bilibili.com/video/av34418967?from=search&seid=7768697976100774039" target="_blank" rel="noopener">【个人汉化】【杀手：契约】结月缘47 mission09 【结月缘&amp;馒馒来实况】</a></p>
+<p>NO.？————一般路过高尼茨 <a href="https://www.bilibili.com/video/av34883455?from=search&seid=2268668665021827547" target="_blank" rel="noopener">【琴叶姐妹·鳗切】pump it</a></p>
+<p>NO.？————月夜喵 <a href="https://www.bilibili.com/video/av34650874?from=search&seid=7281099558266380624" target="_blank" rel="noopener">【授权汉化】【Besiege】陷入英国面的小茜的潘加朱姆火箭车 8【VOICEROID实况】</a></p>
+<p>NO.？————月夜喵 <a href="https://www.bilibili.com/video/av33363555?from=search&seid=4736437622775793136" target="_blank" rel="noopener">【熟肉】【绝地求生】茜酱想要活下来 30（完结）【VOICEROID实况】</a></p>
+<p>月刊未收录汉化作品</p>
+<p>302号房的结月缘</p>
+<p><a href="https://www.bilibili.com/video/av33588693" target="_blank" rel="noopener">【Moonlighter】Voiceroid结月缘实况解说 Part 2</a></p>
+<p><a href="https://www.bilibili.com/video/av33815496" target="_blank" rel="noopener">【Moonlighter】Voiceroid结月缘实况解说 Part 3</a></p>
+<p><a href="https://www.bilibili.com/video/av34123536" target="_blank" rel="noopener">【Moonlighter】Voiceroid 结月缘实况解说 Part 4</a></p>
+<p><a href="https://www.bilibili.com/video/av34913606" target="_blank" rel="noopener">【Moonlighter】Voiceroid 结月缘实况解说 Part5</a></p>
+<p>Angian_ミョウ</p>
+<p><a href="https://www.bilibili.com/video/av32854148?from=search&seid=15729005704440965264" target="_blank" rel="noopener">ʚミョウɞ 【人生最后一小时】准备和茜一起度过（琴葉茜）VOICEROID劇場</a><br>注：月夜喵也翻译了这个视频 就当做另一个翻译版本看吧</p>
+<p>井文卫</p>
+<p><a href="https://www.bilibili.com/video/av32793687?from=search&seid=1855557596403908194" target="_blank" rel="noopener">【授权汉化】琴葉葵的悠悠球解説 001 Buzz-On Blaze 如空色美丽的悠悠球</a></p>
+<p><a href="https://www.bilibili.com/video/av33025057" target="_blank" rel="noopener">【授权汉化】琴葉葵的悠悠球解説 003 Yomega Stealth Fire (Saber Wing Fire)</a></p>
+<p><a href="https://www.bilibili.com/video/av33283298" target="_blank" rel="noopener">【授权汉化】琴葉葵的悠悠球解说 004 Duncan Wheels</a></p>
+<p><a href="https://www.bilibili.com/video/av33500909" target="_blank" rel="noopener">【授权汉化】琴葉葵的悠悠球解说 005 中日Dragons &amp; FRESHTHINGS Coll</a></p>
+<p><a href="https://www.bilibili.com/video/av33711845" target="_blank" rel="noopener">【授权汉化】琴葉葵的悠悠球解说 006 YoYoFactory Mercury(F.A.S.T.)</a></p>
+<p><a href="https://www.bilibili.com/video/av34279795" target="_blank" rel="noopener">【授权汉化】琴葉葵的悠悠球解说 007 YoYoJam Sigma Blade Zwei</a></p>
+<p><a href="https://www.bilibili.com/video/av34764324" target="_blank" rel="noopener">【授权汉化】琴葉葵的悠悠球解说 008 Yomega Fireball</a></p>
+<p>君临德雷克</p>
+<p><a href="https://www.bilibili.com/video/av33102847" target="_blank" rel="noopener">【熟肉】缘的休假#08【VOICEROID实况】【森林】</a></p>
+<p><a href="https://www.bilibili.com/video/av33586024" target="_blank" rel="noopener">【熟肉】缘的休假#09【VOICEROID实况】【森林】</a></p>
+<p>普通的翅膀</p>
+<p><a href="https://www.bilibili.com/video/av33029309" target="_blank" rel="noopener">【个人汉化】避雨侦探4 前篇【VOICEROID剧场】</a></p>
+<p>祈瑶玖</p>
+<p><a href="https://www.bilibili.com/video/av34454583" target="_blank" rel="noopener">【授权汉化】葵的笨拙恋爱喜剧 第1话后篇【VOICEROID剧场】</a></p>
+<p>琴茜叶葵</p>
+<p><a href="https://www.bilibili.com/video/av34379566" target="_blank" rel="noopener">【琴葉葵】黑猫探戈</a>————这个视频并非汉化 是个人推荐</p>
+<p>言刃文刀</p>
+<p><a href="https://www.bilibili.com/video/av33643519" target="_blank" rel="noopener">【个人汉化】【杀手：契约】结月缘47 mission07 【结月缘&amp;馒馒来实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34418934" target="_blank" rel="noopener">【个人汉化】【杀手：契约】结月缘47 mission08 【结月缘&amp;馒馒来实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34867004" target="_blank" rel="noopener">【个人汉化】【杀手：契约】结月缘47 mission10 【结月缘&amp;馒馒来实况】</a></p>
+<p>月夜喵</p>
+<p><a href="https://www.bilibili.com/video/av32934761" target="_blank" rel="noopener">【自制字幕】【彩虹六号】轻慢之心特殊部隊特种兵小茜！第七话（VOICEROID实况）</a></p>
+<p><a href="https://www.bilibili.com/video/av33132708" target="_blank" rel="noopener">【自制字幕】【彩虹六号】轻慢之心特殊部隊特种兵小茜！第八话（VOICEROID实况）</a></p>
+<p><a href="https://www.bilibili.com/video/av33623983" target="_blank" rel="noopener">【自制字幕】【彩虹六号】轻慢之心特殊部隊特种兵小茜！第九话（VOICEROID实况）</a></p>
+<p><a href="https://www.bilibili.com/video/av33920745" target="_blank" rel="noopener">【自制字幕】【彩虹六号】轻慢之心特殊部隊特种兵小茜！第十话（VOICEROID实况）</a></p>
+<p><a href="https://www.bilibili.com/video/av34396029" target="_blank" rel="noopener">【自制字幕】【彩虹六号】轻慢之心特殊部隊特种兵小茜！第十一话（VOICEROID实况）</a></p>
+<p><a href="https://www.bilibili.com/video/av33024089" target="_blank" rel="noopener">【授权汉化】【Besiege】陷入英国面的小茜的潘加朱姆火箭车 4 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av33435055" target="_blank" rel="noopener">【授权汉化】【Besiege】陷入英国面的小茜的潘加朱姆火箭车 5 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av33845820" target="_blank" rel="noopener">【授权汉化】【Besiege】陷入英国面的小茜的潘加朱姆火箭车 6 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34456050" target="_blank" rel="noopener">【授权汉化】【Besiege】陷入英国面的小茜的潘加朱姆火箭车 7 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34949974" target="_blank" rel="noopener">【授权汉化】【Besiege】潘加朱姆最速王 决定战 P1 Grand Prix 第一话 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av33489731" target="_blank" rel="noopener">【英国面】爱犬机器人【潘加朱姆】</a></p>
+<p><a href="https://www.bilibili.com/video/av33194399" target="_blank" rel="noopener">【VOICEROID剧场】 结月纯的母亲交流会</a></p>
+<p><a href="https://www.bilibili.com/video/av33547253" target="_blank" rel="noopener">【VOICEROID剧场】 结月纯的工作</a></p>
+<p><a href="https://www.bilibili.com/video/av34168372" target="_blank" rel="noopener">【VOICEROID剧场】 结月纯和葵 2</a></p>
+<p><a href="https://www.bilibili.com/video/av35009836" target="_blank" rel="noopener">【VOICEROID剧场】 结月纯的日常2 （短篇集）</a></p>
+<p><a href="https://www.bilibili.com/video/av33277640" target="_blank" rel="noopener">【VOICEROID剧场】孤独的切蒲英 「吉豚屋 炸鸡块X煮鸡肉」</a></p>
+<p><a href="https://www.bilibili.com/video/av33755392" target="_blank" rel="noopener">【VOICEROID剧场】孤独的切蒲英 投食篇 第1话「宫崎县特产 炭烤鸡肉」</a></p>
+<p><a href="https://www.bilibili.com/video/av34333847" target="_blank" rel="noopener">【授权汉化】【VOICEROID剧场】孤独的切蒲英 投食篇 第2话「Pizza-Aglio冷冻披萨 」</a></p>
+<p><a href="https://www.bilibili.com/video/av34739810" target="_blank" rel="noopener">【VOICEROID剧场】孤独的切蒲英 龟丸制面鸡肉天妇罗乌冬</a></p>
+<p><a href="https://www.bilibili.com/video/av33492572" target="_blank" rel="noopener">【rakurai】用手边的VRO软件 喵喵喵？</a></p>
+<p><a href="https://www.bilibili.com/video/av33686884" target="_blank" rel="noopener">【授权汉化】【战地1】鸽子 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34041273" target="_blank" rel="noopener">【授权汉化】【战地1】鸽子 2 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34246164" target="_blank" rel="noopener">【授权汉化】【战地1】鸽子 3 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av33981593" target="_blank" rel="noopener">【黎明杀机】崩坏切蒲英的狩猎游戏 10【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34519864" target="_blank" rel="noopener">【黎明杀机】小茜是屠夫 7 【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34105077" target="_blank" rel="noopener">【授权汉化】【ViotoXica】被整个吞下的小茜 1【VOICEROID+油库里实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34577724" target="_blank" rel="noopener">【授权汉化】【使命召唤：黑色行动 4】死神茜拿起武器去战斗 1【VOICEROID实况】</a></p>
+<p><a href="https://www.bilibili.com/video/av34816429" target="_blank" rel="noopener">【VOICEROID剧场】俊子和缘兔的MC恐怖游戏MOD 作者闲聊 其七【无夜之国 1】</a></p>
+<p><a href="https://www.bilibili.com/video/av34875703" target="_blank" rel="noopener">【VOICEROID剧场】俊子和缘兔的MC恐怖游戏MOD 作者闲聊 其八【无夜之国 2】</a></p>
+<p><a href="https://www.bilibili.com/video/av34888369" target="_blank" rel="noopener">【VOICEROID剧场】俊子和缘兔的MC恐怖游戏MOD 作者闲聊 其九【无夜之国 3】</a></p>
+
+    </div>
+</article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'VOICEROID月刊第二期——2018.10'
+    }
+</script>
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            suruga
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/26/cjzude7u0003bnkuwd8t4hu28/">【YukkuriMovieMaker】用YukkuriMovieMaker制作Aviutl使用的让立绘眨眼睛和根据音声对口型的教程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/26/cjzude7u5003dnkuwi3ikcw0d/">【AviUtl】从今天开始制作VRO动画【VOICEROID】</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/26/cjzude83w0073nkuwfzkmyq2l/">结月缘不仅会动还能说话了</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/26/cjzude7u9003fnkuwodvecq0a/">琴叶茜的关西腔讲座</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/26/cjzude7ud003hnkuwn8zge8dx/">【歌うVoiceroid教程】琴叶葵想要学会唱歌！【茶番注意】</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/20/cjzude7nw0015nkuwoxbknrs5/">VOICEROID2界面和基本操作介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/18/cjzude81s0064nkuwczg0m9sy/">早苗KochiyaSanae</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/18/cjzude852007qnkuwkq3als34/">言刃文刀</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/18/cjzude81f0060nkuwcx6575tl/">撕不断的肉刺</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/18/cjzude81u0066nkuwiohk2sco/">普通的翅膀</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/07/31/cjzude7o9001bnkuw1045fbxz/">VOICEROID月刊第一期——2018.09</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/07/31/cjzude7q9001znkuwmb6c5rgk/">VOICEROID月刊第四期——2018.12</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/16/cjzude7sa002pnkuwhpv59gpc/">mk3君</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/18/cjzude7tw0039nkuw1i55l7h5/">ucm186</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/17/cjzude81z0068nkuwqumy3fqg/">木暦</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/17/cjzude82q006inkuwxd4ooqgc/">泽尔里奇</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/17/cjzude84u007mnkuwb2phm9r7/">葭泩ちゃん</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/17/cjzude874008ankuwv83wdmb1/">風雲再起</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/17/cjzude87v008gnkuwle8ovird/">鳗鱼帽</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/08/17/cjzude88y008snkuwj1k05noy/">龙轩やみ</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2019/07/31/cjzude7ow001knkuwga4kjq84/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2019/07/31/cjzude7ow001knkuwga4kjq84/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2019/07/31/cjzude7ow001knkuwga4kjq84/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/汉化搬运作者/" style="font-size: 11.396859383995473px;" class="tag-cloud-link">汉化搬运作者</a>
+    
+    <a href="/tags/中文原创作者/" style="font-size: 12.834809862965088px;" class="tag-cloud-link">中文原创作者</a>
+    
+    <a href="/tags/音乐类原创作者/" style="font-size: 18.085361915388315px;" class="tag-cloud-link">音乐类原创作者</a>
+    
+    <a href="/tags/原创作者/" style="font-size: 9.138091550764376px;" class="tag-cloud-link">原创作者</a>
+    
+    <a href="/tags/日文原创作者/" style="font-size: 17.645336642737256px;" class="tag-cloud-link">日文原创作者</a>
+    
+    <a href="/tags/日文配音作者/" style="font-size: 11.473108229680172px;" class="tag-cloud-link">日文配音作者</a>
+    
+    <a href="/tags/VRO月刊作者/" style="font-size: 19.656298603498215px;" class="tag-cloud-link">VRO月刊作者</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="https://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="https://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="https://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2019 suruga Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
+
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Wed Jul 31 2019 13:10:41 GMT+0800'
+      window.commentConfig.owner = 'kanbarasuruga'
+      window.commentConfig.repo = 'comment-repo'
+      window.commentConfig.client_id = '5a041590c6e876fbdd60'
+      window.commentConfig.client_secret = 'ce6db05aa813165266bb60a1c5435eb96138fa89'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Wed Jul 31 2019 13:10:41 GMT+0800',
+        owner: 'kanbarasuruga',
+        repo: 'comment-repo',
+        client_id: '5a041590c6e876fbdd60',
+        client_secret: 'ce6db05aa813165266bb60a1c5435eb96138fa89',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
+
+</html>
